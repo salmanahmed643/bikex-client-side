@@ -1,0 +1,19 @@
+.follow_container{
+    transition: .5s ease all;
+}
+.follow_container:hover{
+    background-color: rgba(248, 170, 0, .09);
+}
+
+.follow_container:hover i {
+    transform: scale(1.1);
+}
+
+.custom_style i {
+    font-size: 50px;
+    background-color: #F8AA00;
+    padding: 10px;
+    border-radius: 16px;
+    color: #fff;
+    transition: .5s ease all;
+}
