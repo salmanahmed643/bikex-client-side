@@ -107,20 +107,26 @@ import Spinner from '../../../Shared/Spinner/Spinner'
                             </Button>
                           </Box>
                           <br />
-                          <NavLink
-                            to="/register"
-                            style={{ textDecoration: "none" }}
-                          >
-                            <Button size="small"> New User? Register </Button>
-                          </NavLink>
+                          <Box sx={{textAlign: 'center'}}>
+                            <NavLink
+                              to="/register"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <Button size="small"> New User? Register </Button>
+                            </NavLink>
+                          </Box>
                         </form>
                       )}
                       {isLoading && <Spinner />}
                       {authError && <Alert severity="error">{authError}</Alert>}
-                      <p>---------------------</p>
-                      <Button onClick={handleGoogleSignIn} variant="outlined">
-                        Google SignIn
-                      </Button>
+                      <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <Box sx={{border: 2, width: '50%', my: 2}}></Box>
+                      </Box>
+                      <Box sx={{textAlign: 'center'}}>
+                        <Button onClick={handleGoogleSignIn} variant="outlined">
+                          Google SignIn
+                        </Button>
+                      </Box>
                     </Box>
                   </Box>
                 </Grid>

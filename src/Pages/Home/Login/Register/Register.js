@@ -105,9 +105,11 @@ const Register = () => {
                                                     </Button> 
                                                 </Box>
                                                 <br />
-                                                <NavLink to="/login" style={{textDecoration: 'none'}}>
-                                                    <Button size="small"> Already Registered? Login </Button>
-                                                </NavLink>
+                                                <Box sx={{textAlign: 'center'}}>
+                                                    <NavLink to="/login" style={{textDecoration: 'none'}}>
+                                                        <Button size="small"> Already Registered? Login </Button>
+                                                    </NavLink>
+                                                </Box>
                                             </form>
                                         }
                                         {

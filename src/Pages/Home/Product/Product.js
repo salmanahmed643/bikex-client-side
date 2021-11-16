@@ -24,7 +24,6 @@ const Product = ({ product }) => {
           }}
         >
           <img
-            className="product_img"
             style={{ width: "100%" }}
             src={img}
             alt=""

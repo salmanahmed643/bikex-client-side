@@ -119,13 +119,16 @@ export default function Navigation() {
                   </ListItemText>
                 </ListItem>
                 <Divider />
-                <ListItem button>
-                  <ListItemText>
-                    <Link className={mobileNavItem} to="/userdashboard">
-                      Dashboard
-                    </Link>
-                  </ListItemText>
-                </ListItem>
+                {
+                  user?.email && 
+                  <ListItem button>
+                    <ListItemText>
+                      <Link className={mobileNavItem} to="/userdashboard">
+                        Dashboard
+                      </Link>
+                    </ListItemText>
+                  </ListItem>
+                }
                 <Divider />
               </List>
             </Box>
