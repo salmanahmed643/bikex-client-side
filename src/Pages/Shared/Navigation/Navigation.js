@@ -78,10 +78,10 @@ export default function Navigation() {
             {
               user?.email ?
               <Box>
-              <Link className={navItem} to="/userdashboard">
-              <Button color="inherit">Dashboard</Button>
-              </Link>
-                <Button onClick={logOut} color="inherit">Logout</Button>
+                <Link style={{textDecoration: 'none', color: '#fff'}} className={navItemContainer} to="/userdashboard">
+                  <Button color="inherit">Dashboard</Button>
+                </Link>
+                  <Button onClick={logOut} color="inherit">Logout</Button>
               </Box>
               :
               <Box>
@@ -115,6 +115,14 @@ export default function Navigation() {
                   <ListItemText>
                     <Link className={mobileNavItem} to="/products">
                       Products
+                    </Link>
+                  </ListItemText>
+                </ListItem>
+                <Divider />
+                <ListItem button>
+                  <ListItemText>
+                    <Link className={mobileNavItem} to="/userdashboard">
+                      Dashboard
                     </Link>
                   </ListItemText>
                 </ListItem>
